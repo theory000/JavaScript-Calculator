@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <style>
+        .btn-1 , .btn{
+            width: 2.9rem;
+            height: 2.9rem;
+            margin: 2px 0;
+            font-size: 1.3rem;
+        }
+        .btn-1{
+            background: #eee;
+        }
+        .btn-1:hover{
+            background: lightgray;
+        }
+        .btnEqual{
+            margin: 2px 0;
+            width: 40%;
+            height: 2.9rem;
+            font-size: 1.5rem;
+            padding: 0;
+        }
+    </style>
+
+    <title>counter</title>
+</head>
+<body style="height: 100vh;">
+
+    <div class="container-sm d-flex h-100 align-items-center">
+        <div class="calculator container-sm bg-light text-center">
+            <input placeholder="0" id="userInput" class="text-end rounded-3 p-2">
+            <br>
+            <button class="btn btn-1" onclick="press(1)">1</button>
+            <button class="btn btn-1" onclick="press(2)">2</button>
+            <button class="btn btn-1" onclick="press(3)">3</button>
+            <button class="btn btn-outline-success" onclick="press('+')">+</button>
+            <br>
+            <button class="btn btn-1" onclick="press(4)">4</button>
+            <button class="btn btn-1" onclick="press(5)">5</button>
+            <button class="btn btn-1" onclick="press(6)">6</button>
+            <button class="btn btn-outline-secondary" onclick="press('-')">-</button>
+            <br>
+            <button class="btn btn-1" onclick="press(7)">7</button>
+            <button class="btn btn-1" onclick="press(8)">8</button>
+            <button class="btn btn-1" onclick="press(9)">9</button>
+            <button class="btn btn-outline-warning" onclick="press('*')">x</button>
+            <br>
+            <button class="btn btn-1" onclick="press('.')">.</button>
+            <button class="btn btn-1" onclick="press(2)">0</button>
+            <button class="btn btn-outline-danger" onclick="erase()">C</button>
+            <button class="btn btn-outline-info" onclick="press('/')">/</button>
+            <br>
+            <button class="btnEqual rounded-3 btn-outline-primary" onclick="equal()">=</button>
+        </div>
+    </div>
+
+    <script src="calc.js"></script>
+
+
+</body>
+</html>
